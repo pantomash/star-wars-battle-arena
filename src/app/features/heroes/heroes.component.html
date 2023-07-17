@@ -1,9 +1,13 @@
 <div *ngIf="randomFighters.length > 0; else loader">
   <div class="container">
-    <app-hero-card [hero]="randomFighters[0]"></app-hero-card>
+    <app-hero-card [hero]="randomFighters[0]" [isWinner]="person1Win"></app-hero-card>
     <p class="text-3xl">vs</p>
-    <app-hero-card [hero]="randomFighters[1]"></app-hero-card>
+    <app-hero-card [hero]="randomFighters[1]" [isWinner]="person2Win"></app-hero-card>
   </div>
+</div>
+<app-scores [player1Score]="player1Score" [player2Score]="player2Score"></app-scores>
+<div class="replayButton">
+  <button data-testid="replay-button" mat-raised-button color="primary" (click)="replayBattle()">Replay</button>
 </div>
 <ng-template #loader>
   <mat-spinner style="margin: 0 auto;"></mat-spinner>
