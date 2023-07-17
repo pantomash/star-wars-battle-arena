@@ -1,0 +1,16 @@
+.card {
+  @apply w-80;
+}
+
+.cardContent {
+  @apply flex flex-col;
+}
+
+.cardFooter {
+  @apply flex justify-center;
+  @apply text-lg font-semibold text-fuchsia-700;
+}
+
+.cardWinner {
+  @apply bg-green-600;
+}
