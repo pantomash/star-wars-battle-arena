@@ -1,0 +1,10 @@
+<div *ngIf="randomStarships.length > 0; else loader">
+  <div class="container">
+    <app-starship-card [starship]="randomStarships[0]"></app-starship-card>
+    <p class="text-3xl">vs</p>
+    <app-starship-card [starship]="randomStarships[1]"></app-starship-card>
+  </div>
+</div>
+<ng-template #loader>
+  <mat-spinner style="margin: 0 auto;"></mat-spinner>
+</ng-template>

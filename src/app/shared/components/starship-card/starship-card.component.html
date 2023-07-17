@@ -1,0 +1,22 @@
+<mat-card class="card" data-testid="starship-card" [ngClass]="isWinner ? 'cardWinner' : ''">
+  <mat-card-header>
+    <mat-card-title data-testid="card-title">{{starship?.properties?.name}}</mat-card-title>
+    <mat-card-subtitle>Player 1</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="cardContent">
+    <span>{{"Model: " + starship?.properties?.model}}</span>
+    <span>{{"Class: " + starship?.properties?.starship_class}}</span>
+    <span>{{"Manufacturer: " + starship?.properties?.manufacturer}}</span>
+    <span><b>{{"Crew: " + starship?.properties?.crew}}</b></span>
+    <span>{{"Cost(in credit): " + starship?.properties?.cost_in_credits}}</span>
+    <span>{{"Length: " + starship?.properties?.length}}</span>
+    <span>{{"Passengers: " + starship?.properties?.passengers}}</span>
+    <span>{{"Cargo capacity: " + starship?.properties?.cargo_capacity}}</span>
+    <span>{{"Max atmosphere speed: " + starship?.properties?.max_atmosphering_speed}}</span>
+    <span>{{"Hyperdrive rating: " + starship?.properties?.hyperdrive_rating}}</span>
+    <span>{{"Consumables: " + starship?.properties?.consumables}}</span>
+  </mat-card-content>
+  <mat-card-footer class="cardFooter" *ngIf="isWinner">
+    <p>Winner</p>
+  </mat-card-footer>
+</mat-card>

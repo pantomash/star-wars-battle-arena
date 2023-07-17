@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core"
 import { environment } from "../../../environments/environment"
 import { HttpClient } from "@angular/common/http"
 import { map, Observable } from "rxjs"
-import { Hero, HeroDetail, HeroesResponse, HeroResponse } from "../../shared/models/heroes"
+import { Hero, HeroDetail, HeroesResponse, HeroResponse } from "../../shared/models/hero"
 
 @Injectable({
   providedIn: "root",

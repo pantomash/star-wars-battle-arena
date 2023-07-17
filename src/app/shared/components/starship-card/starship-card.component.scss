@@ -1,0 +1,17 @@
+.card {
+  @apply w-96;
+}
+
+.cardContent {
+  @apply flex flex-col;
+}
+
+.cardFooter {
+  @apply flex justify-center;
+  @apply text-lg font-semibold text-fuchsia-700;
+  @apply pt-4;
+}
+
+.cardWinner {
+  @apply bg-green-600;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core"
-import { Hero, HeroDetail } from "../../shared/models/heroes"
+import { Hero, HeroDetail } from "../../shared/models/hero"
 import { HeroesService } from "../../core/services/heroes.service"
 import { forkJoin, map, Observable, switchMap } from "rxjs"
 import { sample } from "lodash-es"
