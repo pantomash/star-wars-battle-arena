@@ -1,4 +1,4 @@
-# StarWarsBattleArena
+# Star Wars Battle Arena
 
 ## Getting started
 
