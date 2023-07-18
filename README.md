@@ -18,4 +18,4 @@ npm run start:dev
 1. `test: ng test` - runs unit tests in a project.
 2. `lint: ng lint` - run linters (without auto-fix)
 3. `cypress: npx cypress open` - opens the interactive Cypress browser, enabling real-time test writing, debugging, and testing
-4. `cypress:run: npx cypress run` - uns tests in command-line mode without browser interaction
+4. `cypress:run: npx cypress run` - runs tests in command-line mode without browser interaction
